@@ -3,8 +3,8 @@ function documentLoder() {
     try {
       const apiUrl = await fetch("https://jsonplaceholder.typicode.com/users");
       const dataContainer = document.getElementById("api-data");
-
-      const users = await apiUrl.json();
+     const response = apiUrl;
+      const users = await response.json();
       dataContainer.innerText = "";
       const userList = document.createElement("ul");
 
