@@ -12,11 +12,11 @@ function documentLoder() {
         let list = document.createElement("li");
         list.innerHTML = element.name;
         //   console.log(element.name);
-        userList.append(list);
+        userList.appendChild(list);
       });
 
       // console.log("hi");
-      dataContainer.append(userList);
+      dataContainer.appendChild(userList);
     } catch {
       const dataContainer = document.getElementById("api-data");
       dataContainer.innerHTML = "";
